@@ -8,7 +8,7 @@ info =
     numberOfTask:1,
     module:"Redux",
     taskName:"Note App",
-    techs:["React",`"Redux",`"Tailwind CSS",`"axios",`"...",`]
+    techs:["React",`"Redux",`"Tailwind CSS",`"axios",`"..."]
     }; 
 ```
 
