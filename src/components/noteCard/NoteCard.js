@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NoteCard = ({message, color}) => {
+const NoteCard = () => {
     return (
         <div className="shadow-2xl min-h-[128px] m-auto">
             <div className="p-4">
@@ -10,7 +10,6 @@ const NoteCard = ({message, color}) => {
                         roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
                         Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
                         the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
-
                     </div>
                     <hr/>
                 </div>
