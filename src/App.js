@@ -1,29 +1,33 @@
-import NoteHeader from "./components/note/NoteHeader";
 import NoteBody from "./components/note/NoteBody";
 import NoteList from "./components/NoteList";
 
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import React, {useEffect} from "react";
+import {setItems} from "./redux/notes/notesSlice";
 
 
+function App() {
+    const dispatch = useDispatch();
 
-function App(){
+    useEffect(()=> {
+        const notes = JSON.parse(localStorage.getItem("notes"));
+        if(notes!==null){
+            dispatch(setItems(notes))
+        }
+    },[])
 
-    const data = useSelector(state=> state.notes.items )
-    console.log(data)
     return (
-        <div className="min-h-screen text-white bg-slate-700">
+        <div className="min-h-screen opacity-75 bg-amber-50">
+
+            <div className="text-center text-5xl font-extrabold pt-10">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-amber-400">
+                            Welcome the Note App
+                </span>
+            </div>
+
             <div className="container m-auto h-full">
-                <div className="grid grid-rows-1">
-                    <div className="row-span-1 mt-40">
-                        <div className={"w-2/4 m-auto pb-5 border-2 rounded-2xl"}>
-                            <NoteHeader/>
-                            <NoteBody/>
-                        </div>
-                        <div className={"w-5/6 m-auto pb-5 pt-5"}>
-                            <NoteList/>
-                        </div>
-                    </div>
-                </div>
+                <div className={"lg:w-1/2 sm:w-full m-auto shadow-2xl bg-amber-50" }><NoteBody/></div>
+                <div className={"w-5/6 m-auto"}><NoteList/></div>
             </div>
         </div>
     );
