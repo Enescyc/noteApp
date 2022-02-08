@@ -10,7 +10,7 @@ const NoteList = () => {
 
                   {data.map((data)=> {
                       return (
-                          <div key={data.id} className={"col-span-1 m-2 w-5/6 "}>
+                          <div key={data.id} className={"col-span-1 m-2 "}>
                               <NoteCard id={data.id} message={data.content} title={data.title} color={data.color}></NoteCard>
                           </div>
                       )

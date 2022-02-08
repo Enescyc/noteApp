@@ -14,7 +14,7 @@ const NoteBody = () => {
 
     const handleChange = (e) => {
         newNote[e.target.name]=e.target.value;
-        
+
     }
 
     return (

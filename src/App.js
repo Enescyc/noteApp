@@ -1,7 +1,7 @@
 import NoteBody from "./components/note/NoteBody";
 import NoteList from "./components/NoteList";
 
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import React, {useEffect} from "react";
 import {setItems} from "./redux/notes/notesSlice";
 
@@ -14,7 +14,7 @@ function App() {
         if(notes!==null){
             dispatch(setItems(notes))
         }
-    },[])
+    },[dispatch])
 
     return (
         <div className="min-h-screen opacity-75 bg-amber-50">
