@@ -7,7 +7,7 @@ const NoteBody = () => {
 
     const notes = useSelector((state) => state.notes.items);
     const colors = useSelector(state => state.notes.colors);
-    const [activeColor, setActiveColor] = useState("");
+    const [activeColor, setActiveColor] = useState("#669999");
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
     const [newClr, setNewClr] = useState({id: colors.length + 1, code: "#669999"});
