@@ -12,7 +12,7 @@ info =
     }; 
 ```
 
-#You can try here : https://note-app-redux.netlify.app/
+# You can try here : https://note-app-redux.netlify.app/
 
 ### You can add a new note with different colors.
 
