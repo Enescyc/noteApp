@@ -12,11 +12,11 @@ info =
     }; 
 ```
 
-##### You can add a new note with different colors.
-##### You can add a new color for your notes.
-##### You can filter your notes.
+### You can add a new note with different colors.
+
+### You can filter your notes.
 
 ![Form](Form.png)
-
+### You can add a new color for your notes.
 ![Form](List.png)
 
