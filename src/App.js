@@ -17,10 +17,10 @@ function App() {
     }, [dispatch])
 
     return (
-        <div className="min-h-screen bg-white opacity-75 bg-gray-100">
-            <div className="container m-auto w-full h-full pt-24 flex flex-col items-center justify-center">
-                <div className={"lg:w-1/2 sm:w-full shadow-2xl bg-amber-50  m-3 px-2 py-2"}><NoteBody/></div>
-                <div className={"lg:w-5/6 md:w-5/6 sm:w-full m-3 px-2 py-2"}><NoteList/></div>
+        <div className="min-h-screen bg-white bg-gray-100 opacity-75">
+            <div className="container flex flex-col justify-center items-center pt-24 m-auto w-full h-full">
+                <div className={"lg:w-1/2 md:w-5/6 sm:w-full shadow-2xl bg-amber-50  m-3 px-2 py-2"}><NoteBody/></div>
+                <div className={"lg:w-5/6 md:w-full sm:w-full mt-5"}><NoteList/></div>
             </div>
         </div>
     );

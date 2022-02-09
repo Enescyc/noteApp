@@ -9,11 +9,11 @@ const NoteCard = () => {
 
     return (
 
-        notes.map(value => {
+        notes !== null ? notes.map(value => {
             return (
                 <div key={value.id}
                      style={{background: value.color}}
-                     className={"flex flex-col min-h-[390px] max-h-fit shadow-2xl px-3 py-3 m-4 relative overflow-y-auto text-black grid-cols-1 border-2 border-white font-mono "}>
+                     className={"flex flex-col min-h-[390px] max-h-fit shadow-2xl  relative overflow-y-auto text-black grid-cols-1 border-2 border-white font-mono m-2"}>
                     <div className={"px-2 py-2 text-4xl text-center text-white font-extrabold"}>
                         {value.title}
                         <hr/>
@@ -35,7 +35,7 @@ const NoteCard = () => {
                     </div>
                 </div>
             )
-        })
+        }):false
 
 
     );
