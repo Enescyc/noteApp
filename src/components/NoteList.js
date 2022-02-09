@@ -6,7 +6,7 @@ const NoteList = () => {
 
 
     return (
-        <div className={"grid lg:grid-cols-4 smd:grid-cols-1 md:grid-cols-2 w-full"}>
+        <div className={"grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 w-full"}>
             <NoteCard></NoteCard>
         </div>
     );
